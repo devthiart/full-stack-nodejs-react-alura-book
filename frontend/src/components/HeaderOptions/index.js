@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Option = styled.li`
   font-size: 16px;
@@ -23,9 +24,15 @@ function HeaderOptions() {
   return (
     <OptionList>
       {
-        textOptions.map( (text, index) => ( 
-          <Option key={index}><p>{text}</p></Option> 
-        ) )
+        textOptions.map( (text, index) => { 
+          const routerText = text.toLowerCase().replace(' ', '-');
+
+          return (
+            <Link to={`/${routerText}`}>
+              <Option key={index}><p>{text}</p></Option>
+            </Link>
+          )
+        } )
       }
     </OptionList>
   )
