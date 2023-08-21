@@ -28,8 +28,8 @@ function HeaderOptions() {
           const routerText = text.toLowerCase().replace(' ', '-');
 
           return (
-            <Link to={`/${routerText}`}>
-              <Option key={index}><p>{text}</p></Option>
+            <Link to={`/${routerText}` } key={index}>
+              <Option ><p>{text}</p></Option>
             </Link>
           )
         } )

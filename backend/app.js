@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const bookRoute = require('./routes/book');
 
 const app = express();
 app.use(express.json()); // Enabling application to receive JSON data.
+app.use(cors({ origin: "*" })); // Enabling our application to receive requests from anyone.
 
 app.use('/books', bookRoute);
 
