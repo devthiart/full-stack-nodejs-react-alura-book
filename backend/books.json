@@ -1,1 +1,34 @@
-[{"id":"1","name":"Amazing Book!"},{"id":"2","name":"Book very cool."},{"id":"3","name":"Great Book"},{"id":"4","name":"Good book"}]
+[
+  {
+    "id": "4",
+    "name": "Understanding algorithms"
+  },
+  {
+    "id": "5",
+    "name": "Cangaceiro Javascript"
+  },
+  {
+    "id": "7",
+    "name": "C# Basic Guide"
+  },
+  {
+    "id": "8",
+    "name": "JavaScript Basic Guide"
+  },
+  {
+    "id": "9",
+    "name": "Clean Code"
+  },
+  {
+    "id": "10",
+    "name": "JavaScript for Beginners"
+  },
+  {
+    "id": "11",
+    "name": "Knowing Python"
+  },
+  {
+    "id": "12",
+    "name": "Alura's Immersion"
+  }
+]
