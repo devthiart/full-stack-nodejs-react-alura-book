@@ -8,6 +8,7 @@ const BookItem = styled.div`
   margin: 20px;
   padding: 10px;
   max-width: 25vw;
+  min-height: 25vh;
   cursor: pointer;
 
   p {

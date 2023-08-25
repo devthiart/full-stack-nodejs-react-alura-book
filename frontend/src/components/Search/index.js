@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { getBooks } from '../../services/books';
 import { BookItem, BookContainer } from "../Book";
 import { Title } from '../Title';
+import { postFavorites } from "../../services/favorites";
+import defaultImgBookCover from '../../imgs/livro.png';
 
 const SearchContainer = styled.section`
   background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
@@ -41,6 +43,11 @@ function Search() {
     setBooks(booksAPI);
   }
 
+  async function insertFavorite(id) {
+    await postFavorites(id);
+    alert(`book with id ${id} added to your favorites list`);
+  }
+
   return (
     <>
       <SearchContainer>
@@ -65,9 +72,12 @@ function Search() {
             : console.log("Zero Results")
         }
         { researchedBooks.map( (book, index) => (
-          <BookItem key={ index }>
+          <BookItem key={ index } onClick={ () => insertFavorite(book.id) }>
+            { book.imgSrc ? 
+                ( <img src={ book.imgSrc } alt="Book cover"></img> ) : 
+                ( <img src={ defaultImgBookCover } alt="Book cover" /> ) 
+            }
             <p>{ book.name }</p>
-            <img src={ book.imgSrc } alt=""></img>
           </BookItem>
         )) }
       </BookContainer>
