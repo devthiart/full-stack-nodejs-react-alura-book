@@ -6,6 +6,7 @@ const favoriteRoute = require('./routes/favorite');
 const app = express();
 app.use(express.json()); // Enabling application to receive JSON data.
 app.use(cors({ origin: "*" })); // Enabling our application to receive requests from anyone.
+app.use(express.static('public'));
 
 app.use('/books', bookRoute);
 app.use('/favorites', favoriteRoute);

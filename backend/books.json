@@ -1,34 +1,42 @@
 [
   {
+    "id": "1",
+    "name": "TypeScript practice guide",
+    "imgUrl": "http://localhost:8000/img/typescript-practice-guide.png"
+  },
+  {
+    "id": "2",
+    "name": "Design Leadership",
+    "imgUrl": "http://localhost:8000/img/design-leadership.png"
+  },
+  {
+    "id": "3",
+    "name": "Exploring Java And Object Orientation",
+    "imgUrl": "http://localhost:8000/img/exploring-java-and-object-orientation.png"
+  },
+  {
     "id": "4",
-    "name": "Understanding algorithms"
+    "name": "JavaScript Cangaceiro",
+    "imgUrl": "http://localhost:8000/img/javascript-cangaceiro.png"
   },
   {
     "id": "5",
-    "name": "Cangaceiro Javascript"
+    "name": "Data Science Software Engineering",
+    "imgUrl": "http://localhost:8000/img/data-science-software-engineering.png"
+  },
+  {
+    "id": "6",
+    "name": "Make your code clean and shiny",
+    "imgUrl": "http://localhost:8000/img/make-your-code-clean-and-shiny.png"
   },
   {
     "id": "7",
-    "name": "C# Basic Guide"
+    "name": "Data structure",
+    "imgUrl": "http://localhost:8000/img/data-structure.png"
   },
   {
     "id": "8",
-    "name": "JavaScript Basic Guide"
-  },
-  {
-    "id": "9",
-    "name": "Clean Code"
-  },
-  {
-    "id": "10",
-    "name": "JavaScript for Beginners"
-  },
-  {
-    "id": "11",
-    "name": "Knowing Python"
-  },
-  {
-    "id": "12",
-    "name": "Alura's Immersion"
+    "name": "Native Android with Kotlin and MVVM",
+    "imgUrl": "http://localhost:8000/img/native-android-with-kotlin-and-mvvm.png"
   }
 ]

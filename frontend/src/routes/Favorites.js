@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { getFavorites, deleteFavorites } from '../services/favorites';
 import { BookContainer, BookItem } from '../components/Book';
 import { Title } from '../components/Title';
-import defaultImgBookCover from '../imgs/livro.png';
+import defaultImgBookCover from '../imgs/cover-not-available.png';
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -44,8 +44,8 @@ function Favorites() {
               onClick={ () => { removeFavorites(favorite.id) } }
             >
               {
-                favorite.imgSrc ? 
-                  ( <img src={ favorite.imgSrc } alt="Book cover"></img> ) : 
+                favorite.imgUrl ? 
+                  ( <img src={ favorite.imgUrl } alt="Book cover"></img> ) : 
                   ( <img src={ defaultImgBookCover } alt="Book cover" /> ) 
               }
               { favorite.name }
