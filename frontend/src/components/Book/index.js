@@ -12,19 +12,25 @@ const BookItem = styled.div`
   cursor: pointer;
 
   p {
-    color: #000000;
+    color: #363636;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     width: 200px;
   }
 
   img {
-    width: 100px;
+    width: 250px;
   }
 
   &:hover {
     /* border: 1px solid white; */
     border-radius: 8px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+    
+    p {
+      text-decoration: underline;
+    }
   }
 `;
 
